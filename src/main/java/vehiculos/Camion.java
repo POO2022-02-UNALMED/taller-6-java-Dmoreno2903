@@ -1,11 +1,9 @@
 package vehiculos;
 
 public class Camion extends Vehiculo{
-	//Atributos
 	private static int cantidadCamiones;
 	private int ejes;
 	
-	//Constructores
 	public Camion(String placa, String nombre, double precio, double peso,
 			Fabricante fabricante, int ejes) {
 		super(placa, 2, 80, nombre, precio, peso, "4X2", fabricante);
@@ -16,7 +14,6 @@ public class Camion extends Vehiculo{
 		cantidadCamiones++;
 	}
 	
-	//Get and Set
 	public int getEjes() {
 		return ejes;
 	}

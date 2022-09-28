@@ -1,10 +1,8 @@
 package vehiculos;
 
 public class Pais {
-	//Atributos
 	private String nombre;
 	
-	//Constructores
 	public Pais(String nombre) {
 		this.nombre = nombre;
 	}

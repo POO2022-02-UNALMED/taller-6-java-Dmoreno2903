@@ -1,7 +1,6 @@
 package vehiculos;
 
 public class Vehiculo {
-	//Atributos
 	private static int CantidadVehiculos;
 	private String placa;
 	private int puertas;
@@ -12,7 +11,6 @@ public class Vehiculo {
 	private String traccion;
 	private Fabricante fabricante;
 	
-	//Constructores
 	public Vehiculo(String placa, int puertas, double velocidadMaxima, String nombre, double precio, double peso,
 			String traccion, Fabricante fabricante) {
 		this.placa = placa;
@@ -30,7 +28,6 @@ public class Vehiculo {
 		CantidadVehiculos++;
 	}
 	
-	//Get and Set
 	public String getPlaca() {
 		return placa;
 	}
@@ -83,7 +80,9 @@ public class Vehiculo {
 		return CantidadVehiculos;
 	}
 	
-	//Métodos
+	public static void setCantidadVehiculos(int cantidadVehiculos) {
+		CantidadVehiculos = cantidadVehiculos;
+	}
 	public static String vehiculosPorTipo() {
 		return "Automoviles: "+ Automovil.cantidadAutomoviles() + 
 				"\nCamionetas: "+ Camioneta.cantidadCamionetas() +

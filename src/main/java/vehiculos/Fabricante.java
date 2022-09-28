@@ -4,18 +4,15 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class Fabricante {
-	//Atributos
 	public static ArrayList<Fabricante> listado = new ArrayList<Fabricante>();
 	private String nombre;
 	private Pais pais;
 	
-	//Constructores
 	public Fabricante(String nombre, Pais pais) {
 		this.nombre = nombre;
 		this.pais = pais;
 	}
 	
-	//Métodos
 	public static void agregarFabricante(Fabricante fabricante) {
 		listado.add(fabricante);
 	}

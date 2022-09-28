@@ -1,11 +1,9 @@
 package vehiculos;
 
 public class Automovil extends Vehiculo{
-	//Atributos
 	private static int cantidadAutomoviles;
 	private int puestos;
 	
-	//Constructores
 	public Automovil(String placa, String nombre, double precio, 
 			double peso, Fabricante fabricante, int puestos) {
 		super(placa, 4, 100, nombre, precio, peso, "FWD", fabricante);
@@ -16,7 +14,6 @@ public class Automovil extends Vehiculo{
 		cantidadAutomoviles++;
 	}
 	
-	//Get and Set
 	public int getPuestos() {
 		return puestos;
 	}
